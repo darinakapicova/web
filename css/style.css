@@ -6,8 +6,8 @@ body {
  background-color: rgba(255, 209, 17, 0.38);
 
 }
-h3 {
-    font-family: "";
+h1 {
+    font-family: Garamond;
 }
 #menu ul {
     text-align: center;
@@ -92,5 +92,9 @@ div.barva{
 }
 
 .info1 {
-   margin: 10px 10px 10px 10px;
+    border: 1px solid red;
+}
+
+.info {
+    margin-left: 780px;
 }
