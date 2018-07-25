@@ -4,20 +4,31 @@
 }
 body {
  background-color: rgba(255, 209, 17, 0.38);
+    font-family: Georgia;
 
 }
 h1 {
     font-family: Garamond;
+    font-size: 20pt;
+}
+#menu {
+    font-family: Georgia;
+    font-size: 12pt;
 }
 #menu ul {
     text-align: center;
 }
+.info1 a {
+    border: 4px solid forestgreen;
+    
+    margin-bottom: auto;
+}
 
 #menu li {
-    font-family: Arial;
     color: white;
     display: inline;
-    padding: 0px 35px;
+    padding: 0px 50px;
+    margin: 0px 0 2px 0;
 }
 
 
@@ -77,8 +88,8 @@ div.barva{
 }
 
 .upot h2 {
-    background-color: #ff9fc1;
-    padding: 4px;
+    padding: 6px;
+
 
 
     /*float: right;*/
@@ -86,17 +97,17 @@ div.barva{
 }
 
 .upot img {
-    width: 760px;
-    height: 335px;
+    width: 730px;
+    height: 300px;
     /*padding: ;*/
 }
 
-.info1 {
-    border: 1px solid red;
-}
+
+
 
 .info {
-    margin-left: 780px;
+    font-size: 15pt;
+    margin-left: 790px;
 }
 
 .detail-title {
