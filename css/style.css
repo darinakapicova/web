@@ -33,9 +33,15 @@ h3 {
 #header img {
 
 }
-#header h3 {
+.b {
+    /*margin-top: 40px;*/
+    padding: 12px;
+    text-align: right;
 
-
+}
+.b h3 {
+    border: 2px solid greenyellow;
+    width: 200px;
 }
 .clean {
     clear: left;
@@ -70,8 +76,8 @@ div.barva{
     padding: 10px 0px 0px 12px;
 }
 
-.upot h4 {
-    background-color: red;
+.upot h2 {
+    background-color: #ff9fc1;
     padding: 4px;
 
 
@@ -85,3 +91,6 @@ div.barva{
     /*padding: ;*/
 }
 
+.info1 {
+   margin: 10px 10px 10px 10px;
+}
