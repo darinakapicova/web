@@ -21,9 +21,17 @@ h3 {
 }
 
 
-
-#header img {
+.left {
     float: left;
+}
+.right {
+    float: left;
+}
+.medium {
+    float: left;
+}
+#header img {
+
 }
 #header h3 {
 
@@ -43,7 +51,7 @@ div.barva{
     /*width: 640px;*/
     padding: 10px;
     background-color: white;
-
+    position: relative;
 }
 .zac img {
     /*border: 10px solid white;*/
@@ -51,19 +59,29 @@ div.barva{
 
 
 }
+.zac .perex {
+    position: absolute;
 
+    top: 10px;
+    right: 10px;
+}
+
+.upot {
+    padding: 10px 0px 0px 12px;
+}
+
+.upot h4 {
+    background-color: red;
+    padding: 4px;
+
+
+    /*float: right;*/
+    /*margin: 0px auto 6px auto;*/
+}
 
 .upot img {
-    width: 350px;
-    height: 250px;
+    width: 760px;
+    height: 335px;
+    /*padding: ;*/
 }
-.upot {
-    float: left;
-    /*position: relative;*/
-}
-.upot .price {
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*z-index: 1000;*/
-    /*color: red;*/
-}
+
