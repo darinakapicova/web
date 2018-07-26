@@ -42,30 +42,89 @@
 
     <div class="popis">
         <b><p>Užijte si romantickou dovolenou v nádherném prostředí Bali. </p>
-        <p>Dvou-týdení pobyt v 4* hotelu hned na břehu moře si
-            jistě oblíbíte, po domluvě je možné zařídit také speciálně upravený program, přesně dle vašich představ a
-            potřeb.</p>
-        <p>V ceně je zahrnuto: Strava, Vstupné, Letenky a samozřejmě i ubytování.</p> </b>
+            <p>Dvou-týdení pobyt v 4* hotelu hned na břehu moře si
+                jistě oblíbíte, po domluvě je možné zařídit také speciálně upravený program, přesně dle vašich představ
+                a
+                potřeb.</p>
+            <p>V ceně je zahrnuto: Strava, Vstupné, Letenky a samozřejmě i ubytování.</p></b>
     </div>
-   <div class="obednat"> <form>
-        <p> <b> Odjezd: </b><input type="date"> </p>
-        <p><b> Příjezd:</b> <input type="date"> </p>
-        <p> <b> Telefonní Číslo: </b><input type="number"> </p>
-        <p><b> Souhlasím s Podmínkami </b><input type="checkbox"> </p>
-       <p> <b> Počet Dní</b> <input type="number"> </p>
-
-        <p><input type="submit"> </p>
-    </form>
-   </div>
+    <div class="obednat">
+        <form>
+            <p><b> Odjezd: </b><input type="date"></p>
+            <p><b> Příjezd:</b> <input type="date"></p>
+            <p><b> Telefonní Číslo: </b><input type="number"></p>
+            <p><b> Souhlasím s Podmínkami </b><input type="checkbox"></p>
+            <p><b> Počet Dní:</b> <input type="number"></p>
+            <p><b> Počet Osob: </b> <input type="number"></p>
+            <p><input type="submit"></p>
+        </form>
+    </div>
 </div>
 
 
-
 </div>
 
 
-<div class="konec">
+<div class="pata">
+    <h2>Komentáře <span id="pocitadlo">(0)</span></h2>
 
-</div>
+
+    <form id="formular">
+        <div style="display: none">
+            děkujeme za zprávu
+        </div>
+        <div>
+            Jmeno:
+            <input name="jmeno"
+                   id="jmeno"
+                   placeholder="vyplnit jmeno">
+
+
+        </div>
+        <div>
+            text:
+            <input name="text"
+                   id="text"
+                   placeholder="text">
+
+
+        </div>
+
+        <div>
+            <input type="submit" value="Odeslat" onclick="return odeslat()">
+            <div id="komentare"></div>
+            <script type="application/javascript">
+                i = 0;
+
+                function odeslat() {
+                    jmeno = document.getElementById('jmeno');
+                    text = document.getElementById('text');
+                    //alert(jmeno + '   ' + text);
+
+                    //   document.getElementById('text').value = 'fsdt';
+                    //document.getElementsByClassName('test')[0].innerHTML = 'ahoooooooooooj';
+
+                    if (jmeno.value === '') {
+                        alert("Vyplňte prosím jméno");
+                        return false;
+
+                    }
+
+                    komentar = '<div><b>' + jmeno.value + ' </b> ' + text.value + '</div>';
+                    komentare = document.getElementById('komentare');
+                    // komentare.innerHTML = komentar;
+
+                    komentare.innerHTML = komentare.innerHTML + komentar;
+
+                    pocitadlo.innerHTML = '<i>(' + (++i) + ')</i>';
+
+                    jmeno.value = '';
+                    text.value = '';
+                    return false;
+
+                }
+            </script>
+
+        </div>
 </body>
 </html>
