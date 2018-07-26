@@ -1,12 +1,21 @@
+@font-face {
+    font-family: Pacifico;
+    src: url("../fonts/Pacifico.ttf");
+}
+@font-face {
+    font-family: Sofia;
+    src: url("../fonts/Sofia-Regular.otf");
+}
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
- background-color: rgba(255, 209, 17, 0.38);
+    background-color: rgba(255, 209, 17, 0.38);
     font-family: Georgia;
-
+    width: 1000px;
+    margin: 0 auto;
 }
 .header img {
     width: 80px;
@@ -14,9 +23,9 @@ body {
     margin-top: 4px;
 }
 .header a {
-    font-family: Garamond;
+    font-family: Pacifico;
     color: rgba(221, 169, 68, 1);
-    font-size: 70pt;
+    font-size: 50pt;
     text-decoration: none;
     margin-left: 20px;
     margin-top: 16px;
@@ -39,8 +48,8 @@ body {
 #menu li {
     color: white;
     display: inline;
-    padding: 0px 50px;
-    margin: 0px 0 2px 0;
+    padding: 12px 50px;
+    margin: 12px 0 2px 0;
 }
 
 .left {
@@ -48,12 +57,8 @@ body {
     margin-left: 12px;
 }
 
-#header img {
-
-}
-
 .b {
-    /*margin-top: 40px;*/
+
     padding: 12px;
     text-align: right;
 
@@ -75,8 +80,7 @@ div.barva {
 
 .zac {
     margin: 0 auto;
-    /*border: 10px solid white;*/
-    /*width: 640px;*/
+
     padding: 10px;
     background-color: white;
     position: relative;
@@ -84,38 +88,35 @@ div.barva {
 
 .zac img {
     /*border: 10px solid white;*/
-    width: 100%; /*width: 640px;*/
-
+    width: 980px;/*width: 640px;*/
 }
 
 .zac .perex {
     position: absolute;
     color: white;
-    font-family: Latha;
-    padding-right: 30px;
-    padding-top: 50px;
-    font-size: 50px;
+    font-family: Sofia;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 180px;
+    font-size: 25px;
     top: 10px;
     right: 10px;
 }
 
 .upot {
-    padding: 10px 0px 0px 12px;
+    padding: 10px 0 0 12px;
     border-bottom: 3px solid #dda944;
 }
 
 .upot h2 {
     padding: 6px;
     color: royalblue;
-
-    /*float: right;*/
-    /*margin: 0px auto 6px auto;*/
 }
 
 .upot img {
-    width: 700px;
-    height: 290px;
-    /*padding: ;*/
+    width: 400px;
+    height: 200px;
+
 }
 
 .upot a {
@@ -129,32 +130,53 @@ div.barva {
     color: white;
     padding: 6px;
     margin-top: 12px;
-    margin-right: 10px;
+    margin-right: 12px;
     display: block;
     float: right;
 }
 
-.konec {
-    margin-top: 20px;
-    margin-left: 12px;
-    margin-bottom: 20px;
-}
-.konec b {
-    margin-top: 20px;
+.upot .info {
+    font-size: 15pt;
+    margin-left: 240px;
 }
 
-.info {
-    font-size: 15pt;
-    margin-left: 790px;
+.konec {
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    background-color: rgba(65, 105, 225, 0.76);
+    border-top: 4px solid white;
 }
+.konec p {
+    margin-top: 20px;
+
+
+}
+.konec img {
+    float: right;
+    width: 80px;
+
+}
+
 #info {
     margin: 12px 0 6px 4px;
 }
 .kon{
-    margin: 12px 0 2px 4px;
+    margin: 12px 0 2px 12px;
+    text-align: center;
+    border-bottom: 2px solid rgba(65, 105, 225, 0.76);
 }
 .tel h4 {
-    margin: 12px 0 6px 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.tel {
+    margin-left: 40px;
+}
+.adress{
+    margin-left: 40px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 
