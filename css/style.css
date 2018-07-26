@@ -85,7 +85,11 @@ div.barva{
 }
 .zac .perex {
     position: absolute;
-
+    color: white;
+    font-family: Latha;
+    padding-right: 30px;
+    padding-top: 50px;
+    font-size: 50px;
     top: 10px;
     right: 10px;
 }
@@ -126,8 +130,14 @@ div.barva{
     float: right;
 }
 
-
-
+.konec {
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+.konec b {
+    margin-top: 20px;
+}
 
 .info {
     font-size: 15pt;
