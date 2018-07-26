@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>za sluncem</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+<div class="barva">
+    <div id="header">
+
+        <img src="images/palm.png" width="50" class="left">
+        <div>Za Sluncem</div>
+        <div class="clean"></div>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li>
+                Last Minute
+            </li>
+            <li>
+                Destinace
+            </li>
+            <li>
+                Kontakt
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="zac">
+    <img src="images/happzonbeach.jpg">
+    <div class="perex"></div>
+</div>
+
+<div class="stred">
+    <h1 class="detail-title"> Rodinná dovolená na Sahaře</h1>
+    <img src="images/sahara2.webp" width="800">
+
+
+    <div class="popis">
+        <p>Nádherné podmínky počasí a zajímavé okolí...</p>
+        <p>To a ještě mnohem víc čeká na vaši rodinu v rozlehlé poušti Sahara.</p>
+        <p> Možnost délky pobytu až na 14 dní </p>
+        <p>V ceně je zahrnuto: Místní Strava, Letenky a samozřejmě i ubytování v zajímavém a pohostinném prostředí.</p>
+    </div>
+
+
+    <div class="obednat">
+        <form>
+            <p><b> Odjezd: </b><input type="date"></p>
+            <p><b> Příjezd:</b> <input type="date"></p>
+            <p><b> Telefonní Číslo: </b><input type="number"></p>
+            <p><b> Souhlasím s Podmínkami </b><input type="checkbox"></p>
+            <p><b> Počet Dní:</b> <input type="number"></p>
+            <p><b> Počet Osob: </b> <input type="number"></p>
+            <p><input type="submit"></p>
+        </form>
+    </div>
+</div>
+
+
+<div class="pata">
+    <h2>Komentáře <span id="pocitadlo">(0)</span></h2>
+
+
+    <div id="formular">
+        <div style="display: none">
+            děkujeme za zprávu
+        </div>
+        <div>
+            Jmeno:
+            <input name="jmeno"
+                   id="jmeno"
+                   placeholder="vyplnit jmeno">
+
+
+        </div>
+        <div>
+            text:
+            <input name="text"
+                   id="text"
+                   placeholder="text">
+
+
+        </div>
+
+        <div>
+            <input type="submit" value="Odeslat" onclick="return odeslat()">
+            <div id="komentare"></div>
+            <script type="application/javascript">
+                i = 0;
+
+                function odeslat() {
+                    jmeno = document.getElementById('jmeno');
+                    text = document.getElementById('text');
+
+                    if (jmeno.value === '') {
+                        alert("Vyplňte prosím jméno");
+                        return false;
+
+                    }
+
+                    komentar = '<div><b>' + jmeno.value + ' </b> ' + text.value + '</div>';
+                    komentare = document.getElementById('komentare');
+
+
+                    komentare.innerHTML = komentare.innerHTML + komentar;
+
+                    pocitadlo.innerHTML = '<i>(' + (++i) + ')</i>';
+
+                    jmeno.value = '';
+                    text.value = '';
+                    return false;
+
+                }
+            </script>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
