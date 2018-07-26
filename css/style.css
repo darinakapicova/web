@@ -120,6 +120,7 @@ div.barva {
 /*}*/
 
 .stred {
+    padding-top: 8px;
     width: 800px;
     margin: auto;
     display: block
@@ -128,4 +129,11 @@ div.barva {
 .popis {
     margin-top: 40px;
     margin-bottom: 40px
+}
+.obednat {
+    border: 3px solid rgba(56, 105, 225, 0.76);
+background:rgba(56, 105, 225, 0.76);
+    text-align: center;
+    padding-top: 4px;
+padding-bottom: 4px;
 }
