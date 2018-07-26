@@ -41,13 +41,15 @@
 
 
     <div class="popis">
-        <b><p>Užijte si romantickou dovolenou v nádherném prostředí Bali. </p>
+        <p>Užijte si romantickou dovolenou v nádherném prostředí Bali. </p>
             <p>Dvou-týdení pobyt v 4* hotelu hned na břehu moře si
                 jistě oblíbíte, po domluvě je možné zařídit také speciálně upravený program, přesně dle vašich představ
                 a
                 potřeb.</p>
-            <p>V ceně je zahrnuto: Strava, Vstupné, Letenky a samozřejmě i ubytování.</p></b>
+            <p>V ceně je zahrnuto: Strava, Vstupné, Letenky a samozřejmě i ubytování.</p>
     </div>
+
+
     <div class="obednat">
         <form>
             <p><b> Odjezd: </b><input type="date"></p>
@@ -69,7 +71,7 @@
     <h2>Komentáře <span id="pocitadlo">(0)</span></h2>
 
 
-    <form id="formular">
+    <div id="formular">
         <div style="display: none">
             děkujeme za zprávu
         </div>
@@ -99,10 +101,6 @@
                 function odeslat() {
                     jmeno = document.getElementById('jmeno');
                     text = document.getElementById('text');
-                    //alert(jmeno + '   ' + text);
-
-                    //   document.getElementById('text').value = 'fsdt';
-                    //document.getElementsByClassName('test')[0].innerHTML = 'ahoooooooooooj';
 
                     if (jmeno.value === '') {
                         alert("Vyplňte prosím jméno");
@@ -112,7 +110,7 @@
 
                     komentar = '<div><b>' + jmeno.value + ' </b> ' + text.value + '</div>';
                     komentare = document.getElementById('komentare');
-                    // komentare.innerHTML = komentar;
+
 
                     komentare.innerHTML = komentare.innerHTML + komentar;
 
@@ -126,5 +124,6 @@
             </script>
 
         </div>
+
 </body>
 </html>
