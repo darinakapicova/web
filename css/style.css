@@ -115,9 +115,9 @@ div.barva {
 }
 
 /*.h{*/
-    /*width: 50%;*/
-    /*margin: auto;*/
-    /*display: block;*/
+/*width: 50%;*/
+/*margin: auto;*/
+/*display: block;*/
 /*}*/
 
 .stred {
@@ -132,16 +132,17 @@ div.barva {
     margin-bottom: 40px;
     font-family: Georgia;
 }
+
 .obednat {
 
-background:rgba(56, 105, 225, 0.76);
+    background: rgba(56, 105, 225, 0.76);
     text-align: center;
     padding-top: 4px;
-padding-bottom: 4px;
+    padding-bottom: 4px;
 }
 
 .pata {
-    background:rgba(56, 105, 225, 0.76);
+    background: rgba(56, 105, 225, 0.76);
     text-align: center;
     padding-top: 4px;
     padding-bottom: 4px;
